@@ -3,9 +3,9 @@ h1{
     color: red;
     font-size: 200px;
 }
-/*img{
+img{
     background-color: red;
-}*/
+}
 /**************** class selectors ***************/
 .bacon{
     background-color: green;
