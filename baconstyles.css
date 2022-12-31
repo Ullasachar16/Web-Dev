@@ -13,6 +13,9 @@ img{
 .broccoli{
     background-color: red;
 }
+.circular{
+    border-radius: 50%;
+}
 /**************** id selectors ****************/
 #heading{
     color: blue;
