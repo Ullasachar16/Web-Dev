@@ -1,6 +1,17 @@
 div{
     background-color: #e4f9f5;
 }
+.middle-container{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
+.bottom-container{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
 body{
     margin: 0;
 }
