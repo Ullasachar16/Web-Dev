@@ -18,9 +18,13 @@
 }
 .chilli-img{
     width: 25%;
+    float: left;
+    margin-right: 30px;
 }
 .computer-img{
     width: 25%;
+    float: left;
+    margin-right: 30px;
 }
 body{
     margin: 0;
