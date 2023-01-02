@@ -14,6 +14,13 @@
     width: 50%;
     margin: 100px auto 100px auto;
     text-align: left;
+    line-height: 2;
+}
+.chilli-img{
+    width: 25%;
+}
+.computer-img{
+    width: 25%;
 }
 body{
     margin: 0;
