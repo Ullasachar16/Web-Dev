@@ -103,3 +103,7 @@ h3{
   .copyright-text{
     color: #EAF6F6;
   }
+  .contact-message{
+    width: 40%;
+    margin: 40px auto 60px;
+  }
