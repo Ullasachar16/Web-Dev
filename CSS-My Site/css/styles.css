@@ -23,8 +23,8 @@
 }
 .computer-img{
     width: 25%;
-    float: left;
-    margin-right: 30px;
+    float: right;
+    margin-left: 30px;
 }
 body{
     margin: 0;
