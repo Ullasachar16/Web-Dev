@@ -10,8 +10,9 @@
 }
 .bottom-container{
     background-color: #66BFBF;
-    padding-top: 10px;
+    padding: 50px 0 20px;
 }
+
 .intro{
     width: 30%;
     margin: auto;
@@ -24,6 +25,9 @@ hr{
     border-bottom: none;
     width: 4%;
     margin: 100px auto;
+}
+a{
+    color: #11999E;
 }
 .skill-row{
     width: 50%;
@@ -85,7 +89,7 @@ h3{
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
-    font-family: Georgia;
+    font-family: 'Montserrat', sans-serif;
     color: #ffff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
