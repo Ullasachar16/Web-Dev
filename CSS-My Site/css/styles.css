@@ -28,6 +28,12 @@ hr{
 }
 a{
     color: #11999E;
+    font-family: 'Montserrat',sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: #eaf6f6;
 }
 .skill-row{
     width: 50%;
@@ -104,7 +110,7 @@ h3{
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
-  .copyright-text{
+  .copyright{
     color: #EAF6F6;
   }
   .contact-message{
