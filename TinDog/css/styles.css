@@ -10,3 +10,6 @@ h1{
 .container-fluid{
     padding: 3% 15%;
 }
+.image-spot{
+    transform: rotate(25deg);
+}
