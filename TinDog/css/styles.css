@@ -26,6 +26,9 @@ p{
     margin: 0;
     text-align: left;
 }
+.container-fluid{
+    padding: 7% 15%;
+}
 /* Title Image */
 .title-image{
     width: 50%;
