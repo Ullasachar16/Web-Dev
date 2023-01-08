@@ -26,9 +26,6 @@ p{
     margin: 0;
     text-align: left;
 }
-.container-fluid{
-    padding: 3% 15% 7%;
-}
 /* Title Image */
 .title-image{
     width: 50%;
@@ -38,7 +35,6 @@ p{
 }
 /* Features Section */
 #features{
-    padding: 7% 15%;
     background-color: #fff;
     position: relative;
     z-index: 1;
@@ -99,9 +95,6 @@ p{
     width: 15%;
     margin: 20px 20px 50px;
 }
-.carousel-item{
-    padding: 7% 15%;
-}
 /* Pricing Section */
 #pricing{
     padding: 100px;
@@ -127,12 +120,8 @@ p{
 #cta{
     background-color: #ff4c68;
     color: #fff;
-    padding: 7% 15%;
 }
 /* Footer Section */
-#footer{
-    padding: 7% 15%;
-}
 .social-icon{
     margin: 20px 10px;
 }
