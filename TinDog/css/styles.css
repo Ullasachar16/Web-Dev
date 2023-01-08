@@ -20,21 +20,9 @@ p{
     font-size: 3rem;
     line-height: 1.5;
 }
-#title{
-    background-color: #ff4c68;
-    color: ghostwhite;
-    margin: 0;
-    text-align: left;
-}
+/* Container Section */
 .container-fluid{
     padding: 7% 15%;
-}
-/* Title Image */
-.title-image{
-    width: 50%;
-    transform: rotate(25deg);
-    position: absolute;
-    right: 30%;
 }
 /* Features Section */
 #features{
@@ -71,6 +59,23 @@ p{
     font-family: 'Montserrat';
     font-size: 1.2rem;
     font-weight: 300;
+}
+/* Title Section */
+#title{
+    background-color: #ff4c68;
+    color: ghostwhite;
+    margin: 0;
+    text-align: left;
+}
+#title .container-fluid{
+    padding: 3% 15% 7%;
+}
+/* Title Image */
+.title-image{
+    width: 50%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
 /* Download Buttons */
 .download-buttons{
