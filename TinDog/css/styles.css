@@ -5,13 +5,6 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat';
     font-weight: 700;
 }
-h2{
-    font-size: 3rem;
-    line-height: 1.5;
-}
-h3{
-    font-size: 1.5rem;
-}
 p{
     color: #8f8f8f;
 }
@@ -20,6 +13,10 @@ p{
     font-family: 'Montserrat';
     font-weight: 900;
     font-size: 3.5rem;
+    line-height: 1.5;
+}
+.section-heading{
+    font-size: 3rem;
     line-height: 1.5;
 }
 #title{
@@ -43,6 +40,9 @@ p{
     background-color: #fff;
     position: relative;
     z-index: 1;
+}
+.feature-title{
+    font-size: 1.5rem;
 }
 .feature-box{
     text-align: center;
@@ -82,6 +82,10 @@ p{
     background-color: #ef8172;
     color: #fff;
 }
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
 .testimonial-image{
     width: 10%;
     border-radius: 100%;
@@ -103,6 +107,10 @@ p{
 #pricing{
     padding: 100px;
     text-align: center;
+}
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 .pricing-column{
     padding: 3% 2%;
