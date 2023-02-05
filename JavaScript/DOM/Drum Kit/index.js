@@ -1,4 +1,5 @@
 //Detecting Button press
+
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 for(var i=0; i<numberOfDrumButtons; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function (){
@@ -7,7 +8,10 @@ for(var i=0; i<numberOfDrumButtons; i++){
         buttonAnimation(buttonInnerHTML);
     });
 }
+
+
 //Detecting KeyBoard press
+
 document.addEventListener("keypress",function(event){
     makeSound(event.key);
     buttonAnimation(event.key);
@@ -49,6 +53,8 @@ document.addEventListener("keypress",function(event){
         }
     }
 
+    //adding animation and timeout function 
+    
     function buttonAnimation(currentKey){
         var activeButton=document.querySelector("." + currentKey);
         activeButton.classList.add("pressed");
