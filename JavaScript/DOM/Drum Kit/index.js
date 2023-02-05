@@ -1,3 +1,4 @@
+//Detecting button press
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 for(var i=0; i<numberOfDrumButtons; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function (){
@@ -5,6 +6,10 @@ for(var i=0; i<numberOfDrumButtons; i++){
         makeSound(buttonInnerHTML);
     });
 }
+//Detecting key press
+document.addEventListener("keypress",function(event){
+    makeSound(event.key);
+});
 
     function makeSound(key){
         switch (key) {
