@@ -1,4 +1,4 @@
-$("input").keypress(function(){
-    $("h1").css("color","cyan");
+$("input").keypress(function(event){
+    console.log(event.key);
 });
 
