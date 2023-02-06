@@ -1,6 +1,6 @@
 
 $("button").on("click",function(){
-    $("h1").fadeOut();
+    $("h1").slideUp();
 });
 
 
