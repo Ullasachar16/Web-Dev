@@ -6,7 +6,11 @@ $("h1").prepend("<button>New</button");
 
 $("h1").append("<button>New</button");
 
+
+
 $(document).keypress(function(event){
     $("h1").text(event.key);
 });
+
+$("button").remove();
 
