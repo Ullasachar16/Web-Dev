@@ -30,3 +30,12 @@ function playSound(name){
     audio.play();
 
 }
+
+function animatePress(currentColor){
+    $("btn").click(function() {
+        $(this).addClass("pressed");
+        setTimeout(function() {
+        $(this).removeClass("pressed");
+        }, 100);
+        });
+}
