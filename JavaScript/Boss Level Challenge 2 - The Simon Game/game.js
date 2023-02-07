@@ -1,3 +1,5 @@
+var buttonColors = ["red", "blue", "green", "yellow"];
+
 function newSequence(){
-    var rand = Math.floor(Math.random()*3)+1;
+    var randomNumber = Math.floor(Math.random()*3)+1;
 }
