@@ -46,6 +46,7 @@ function checkAnswer(currentLevel) {
     } else {
 
       console.log("wrong");
+      playSound("sounds/wrong.mp3")
 
     }
 
