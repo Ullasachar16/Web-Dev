@@ -53,6 +53,7 @@ function checkAnswer(currentLevel) {
       }, 200);
 
       $("#level-title").text("Game Over, Press Any Key to Restart");
+      startOver();
     }
 
 }
