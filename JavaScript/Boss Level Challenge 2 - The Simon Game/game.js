@@ -15,6 +15,14 @@ $("btn").on("click",function(){
     animatePress(userChosenColour);
 });
 
+$(document).keypress(function(){
+    if (!started) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+      }
+    });
+
 function newSequence(){
 
     var randomNumber = Math.floor(Math.random()*4);
