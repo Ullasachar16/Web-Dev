@@ -7,7 +7,7 @@ app.get("/",function(req,res){
     https.get(url,function(response){
         console.log(response);
     });
-    res.send();
+    res.send("Server is up and running");
 });
 
 
