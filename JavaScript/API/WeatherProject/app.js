@@ -10,8 +10,8 @@ app.get("/",function(req,res){
             const weatherData = JSON.parse(data);
             console.log(weatherData);
             const object = {
-                name: Ullas,
-                favoriteFood: Biryani
+                name: "Ullas",
+                favoriteFood: "Biryani"
             }
             console.log(JSON.stringify(object));
         });
