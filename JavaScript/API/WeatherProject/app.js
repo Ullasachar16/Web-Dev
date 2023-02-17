@@ -11,7 +11,7 @@ app.get("/",function(req,res){
             console.log(weatherData);
             const temp = weatherData.main.temp;
             const weatherDescription = weatherData.weather[0].description;
-            res.send("The Temperature in London is "+temp+"degree celcius.");
+            res.send("<h1>The Temperature in London is "+temp+" degree celcius.</h1>");
         });
     });
 });
