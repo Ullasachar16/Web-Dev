@@ -12,8 +12,11 @@ app.get("/",function(req,res){
             console.log(weatherData);
             const temp = weatherData.main.temp;
             const weatherDescription = weatherData.weather[0].description;
+            const icon = weatherData.weather[0].icon;
+            const imageURL = "http://openweathermap.org/img/wn/"+icon+"@2x.png";
             res.write("<p>The Weather is currently "+weatherDescription+"</p>");
             res.write("<h1>The Temperature in London is "+temp+" degree celcius.</h1>");
+            res.write("<img>"+imageURL+"</img>");
             res.send();
         });
     });
