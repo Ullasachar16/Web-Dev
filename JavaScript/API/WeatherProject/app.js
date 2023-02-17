@@ -9,6 +9,11 @@ app.get("/",function(req,res){
         response.on("data",function(data){
             const weatherData = JSON.parse(data);
             console.log(weatherData);
+            const object = {
+                name: Ullas,
+                favoriteFood: Biryani
+            }
+            console.log(JSON.stringify(object));
         });
     });
     res.send("Server is up and running");
