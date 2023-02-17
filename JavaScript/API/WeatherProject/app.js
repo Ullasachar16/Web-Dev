@@ -1,4 +1,5 @@
 const express = require("express");
+const { write } = require("fs");
 const app = express();
 const https = require("https");
 
@@ -11,7 +12,9 @@ app.get("/",function(req,res){
             console.log(weatherData);
             const temp = weatherData.main.temp;
             const weatherDescription = weatherData.weather[0].description;
-            res.send("<h1>The Temperature in London is "+temp+" degree celcius.</h1>");
+            res.write("<p>The Weather is currently "+weatherDescription+"</p>");
+            res.write("<h1>The Temperature in London is "+temp+" degree celcius.</h1>");
+            res.send();
         });
     });
 });
