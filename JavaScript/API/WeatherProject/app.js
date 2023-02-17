@@ -1,10 +1,18 @@
 const express = require("express");
 const { write } = require("fs");
-const app = express();
+const bodyParser = require("body-parser");
 const https = require("https");
+
+const app = express();
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/index.html");
+        });
+
+        app.post("/",function(req,res){
+           console.log(req.body.cityName) ;
+            
         });
         // const query = "London";
         // const apiKey = "9c745cac0b43efe3f115d94f1e518258";
