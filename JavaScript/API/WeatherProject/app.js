@@ -11,11 +11,11 @@ app.get("/",function(req,res){
         });
 
         app.post("/",function(req,res){
-             const query = req.body.cityName;
-        const apiKey = "9c745cac0b43efe3f115d94f1e518258";
-        const unit = "metric";
-        const url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+apiKey+"&units="+unit+"";
-        https.get(url,function(response){
+            const query = req.body.cityName;
+            const apiKey = "9c745cac0b43efe3f115d94f1e518258";
+            const unit = "metric";
+            const url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+apiKey+"&units="+unit+"";
+            https.get(url,function(response){
             console.log(response.statusCode);
             response.on("data",function(data){
                 const weatherData = JSON.parse(data);
