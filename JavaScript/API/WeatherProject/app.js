@@ -3,7 +3,7 @@ const app = express();
 const https = require("https");
 
 app.get("/",function(req,res){
-    const url = "";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=London&appid=9c745cac0b43efe3f115d94f1e518258&units=metric";
     https.get(url,function(response){
         console.log(response);
     });
