@@ -29,11 +29,20 @@ app.post("/",function(req,res){
     const url = "https://us21.api.mailchimp.com/3.0/lists/39bb03bbf4";
     const options = {
         method: "POST",
-        auth: "ullas:2d400f09d4e0fe39c0c7a9e336a96193-us21"
+        auth: "ullas:e6da9070514749941fd9603bdfb67fdc-us21"
     }
-    https.request(url,options,function(response){
-
+    const request = https.request(url,options,function(response){
+        if(response.statusCode === 200){
+            res.send("Successfully Subscribed");
+        }else{
+            res.send("There was an error with signing up,please try again");
+        }
+        response.on("data",function(data){
+            console.log(JSON.parse(data));
+        });
     });
+    request.write(jsonData);
+    request.end();
 });
 
 
@@ -46,6 +55,6 @@ app.listen(3000,function(){
     console.log("Server is running in port 3000");
 });
 
-// 2d400f09d4e0fe39c0c7a9e336a96193-us21
+// e6da9070514749941fd9603bdfb67fdc-us21
 
 //39bb03bbf4
