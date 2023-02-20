@@ -1,6 +1,9 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/",function(req,res){
     console.log("Server is up");
