@@ -33,9 +33,9 @@ app.post("/",function(req,res){
     }
     const request = https.request(url,options,function(response){
         if(response.statusCode === 200){
-            res.send("Successfully Subscribed");
+            res.sendFile(__dirname+"/success.html");
         }else{
-            res.send("There was an error with signing up,please try again");
+            res.sendFile(__dirname+"/failure.html");
         }
         response.on("data",function(data){
             console.log(JSON.parse(data));
@@ -50,6 +50,13 @@ app.post("/",function(req,res){
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/signup.html");
 });
+
+
+app.post("/failure",function(req,res){
+    res.redirect("/");
+});
+
+
 
 app.listen(3000,function(){
     console.log("Server is running in port 3000");
