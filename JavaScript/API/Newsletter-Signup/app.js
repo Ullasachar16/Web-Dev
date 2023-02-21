@@ -46,10 +46,21 @@ app.post("/",function(req,res){
             console.log(JSON.parse(data));
         })
     })
-    request.write(jsonData);
+    //request.write(jsonData);
     request.end();
+});
+
+app.post("/failure",function(req,res){
+    res.redirect("/");
 });
 
 app.listen(3000,function(){
     console.log("Server is running on port 3000");
 });
+
+//API Key
+// 1dbe67f70e2287fb40999ed3f14d5c95-us21
+
+
+//List ID
+//  39bb03bbf4
