@@ -19,7 +19,8 @@ app.get("/",function(req,res){
 });
 
 app.post("/",function(req,res){
-    console.log(req.body.newItem);
+    var item = req.body.newItem;
+    res.redirect("/");
 });
 
 app.listen(3000,function(){
