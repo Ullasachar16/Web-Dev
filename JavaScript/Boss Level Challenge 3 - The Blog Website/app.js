@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get("/",function(req,res){
-    res.send(__dirname + "/home.ejs");
-})
+    res.render("home");
+});
 
 
 app.listen(3000,function(){
