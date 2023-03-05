@@ -4,8 +4,8 @@
 
 <% console.log(posts); %>
 
-<% for(posts: posts){ %>>
-   <% posts.title; %>
+<% posts.forEach(function(post)){ %>>
+   <% consol.log(post.title); %>
 <% }; %>
 
 <%- include("partials/footer") -%>
