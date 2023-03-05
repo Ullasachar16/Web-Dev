@@ -13,10 +13,11 @@ app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-var posts = [];
+let posts = [];
 
 app.get("/",function(req,res){
-    res.render("home",{startingContent: homeStartingContent});
+   res.render("home",{startingContent: homeStartingContent});
+   console.log(posts);
 });
 
 app.get("/about",function(req,res){
