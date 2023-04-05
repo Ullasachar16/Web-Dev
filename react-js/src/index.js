@@ -28,5 +28,6 @@ ReactDOM.render(
       tel="+918 372 574"
       email="gmail@chucknorris.com"
     />
-  </div>
-)
+  </div>,
+  document.getElementById('root')
+);
