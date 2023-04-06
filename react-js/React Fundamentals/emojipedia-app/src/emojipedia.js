@@ -19,6 +19,12 @@ const emojipedia = [
       name: "Rolling On The Floor, Laughing",
       meaning:
         "This is funny! A smiley face, rolling on the floor, laughing. The face is laughing boundlessly. The emoji version of “rofl“. Stands for „rolling on the floor, laughing“."
+    },
+    {
+        id:4,
+        emoji: "😉",
+        name:" Winking Face",
+        meaning:"Smiley blinks mischievously with one eye. Expression of humor, has been pulling a practical joke, is flirting with you or has an ulterior motive. The wink weakens the message: do not take it seriously, regard it as humorous."
     }
   ];
 
