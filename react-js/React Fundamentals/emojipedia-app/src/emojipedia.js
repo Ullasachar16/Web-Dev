@@ -1,5 +1,6 @@
 const emojipedia = [
     {
+      
       id: 1,
       emoji: "💪",
       name: "Tense Biceps",
@@ -26,6 +27,7 @@ const emojipedia = [
         name:" Winking Face",
         meaning:"Smiley blinks mischievously with one eye. Expression of humor, has been pulling a practical joke, is flirting with you or has an ulterior motive. The wink weakens the message: do not take it seriously, regard it as humorous."
     }
+
   ];
 
   export default emojipedia;
