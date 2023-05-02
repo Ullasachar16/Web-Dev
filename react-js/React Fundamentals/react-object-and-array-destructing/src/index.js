@@ -2,15 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import animals from './data';
 
-console.log(animals);
-
 const [cat,dog] = animals;
 
-console.log(cat);
+const {feedingRequirements: {food,water}}= cat;
 
-const {name,sound} = cat;
-
-console.log(name);
+console.log(food);
 
 // ReactDOM.render(
 //       <table>
