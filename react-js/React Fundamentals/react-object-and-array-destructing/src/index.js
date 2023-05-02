@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import animals from './data';
+import cars from './practice';
 
 ReactDOM.render(
       <table>
