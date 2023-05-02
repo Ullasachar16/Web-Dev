@@ -10,7 +10,7 @@ console.log(cat);
 
 const {name,sound} = cat;
 
-console.log(sound);
+console.log(name);
 
 // ReactDOM.render(
 //       <table>
