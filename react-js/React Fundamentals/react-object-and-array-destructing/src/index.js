@@ -15,7 +15,7 @@ ReactDOM.render(
         <tr>
           <th>Brand</th>
           <th>Top Speed</th>
-          <th>Top Color</th>
+          <th>Color</th>
         </tr>
         <tr>
           <td>{tesla.model}</td>
