@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import cars from './practice';
 
+const [honda,tesla] = cars;
+
+const {speedStats: {topSpeed: hondaTopSpeed}} = honda;
+const {speedStats: {topSpeed: teslaTopSpeed}} = tesla;
+
 ReactDOM.render(
       <table>
         <tr>
