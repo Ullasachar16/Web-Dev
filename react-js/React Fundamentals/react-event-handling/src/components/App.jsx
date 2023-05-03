@@ -14,6 +14,10 @@ function App(){
         setMouseOver(true);
     }
 
+    function handleMouseOut(){
+        setMouseOver(false);
+    }
+
     return (
         <div className="container">
         <h1>{headingText}</h1>
@@ -21,6 +25,7 @@ function App(){
         <button style={{backgroundColor: isMousedOver ? "black" : "white"}}
         onClick={handleClick}
         onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
         >Submit</button>
         
         </div>
