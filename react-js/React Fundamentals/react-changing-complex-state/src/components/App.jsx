@@ -11,16 +11,16 @@ function App(){
 
         const {value,name} = event.target;
 
-        setFullName((prevValue) => {
+        setFullName((previousValue) => {
 
             if(name === "fName"){
                 return {
                     fName: value,
-                    lName: prevValue.lName
+                    lName: previousValue.lName
                 }
             }else if(name === "lName"){
                 return {
-                    fName: prevValue.fName,
+                    fName: previousValue.fName,
                     lName: value
                 };
             }
@@ -47,7 +47,7 @@ function App(){
         </form>
         </div>
     );
-    
+
 }
 
 export default App;
