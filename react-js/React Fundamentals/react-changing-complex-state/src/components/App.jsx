@@ -12,6 +12,7 @@ function App(){
         const {value,name} = event.target;
 
         setFullName((prevValue) => {
+
             if(name === "fName"){
                 return {
                     fName: value,
@@ -28,6 +29,7 @@ function App(){
 
   
     return (
+
         <div className="container">
         <h1>Hello {fullName.fName} {fullName.lName}</h1>
         <form>
@@ -45,6 +47,7 @@ function App(){
         </form>
         </div>
     );
+    
 }
 
 export default App;
