@@ -10,7 +10,7 @@ function App() {
     function handleChange(event) {
       const { name, value } = event.target;
   
-      //Without using ES6 spread operator
+      //->>>Without using ES6 spread operator
     //   setContact(prevValue => {
     //     if (name === "fName") {
     //       return {
@@ -33,7 +33,7 @@ function App() {
     //     }
     //   });
 
-        //Using ES6 spread operator
+        //->>>Using ES6 spread operator
         setContact((prevValue) => {
             return {
                 ...prevValue,
