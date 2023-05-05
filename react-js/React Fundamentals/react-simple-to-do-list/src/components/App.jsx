@@ -4,6 +4,8 @@ function App() {
 
     const [inputText,setInputText] = useState("");
 
+    const [items,setItems] = useState([]);
+
     function handleChange(event){
         const newValue = event.target.value;
         setInputText(newValue);
@@ -24,7 +26,7 @@ function App() {
       </div>
       <div>
         <ul>
-          <li>A Item</li>
+          {items.map((item) => <li>{todoItem}</li>)}
         </ul>
       </div>
     </div>
