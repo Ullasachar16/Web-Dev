@@ -33,7 +33,7 @@ function App() {
     //     }
     //   });
 
-        //->>>Using ES6 spread operator
+        //->>>>Using ES6 spread operator
         setContact((prevValue) => {
             return {
                 ...prevValue,
