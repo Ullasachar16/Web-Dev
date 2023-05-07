@@ -1,8 +1,6 @@
 import React from "react";
 
 function ToDoItem(props){
-
-
     return (
         <div 
             onClick={() => {
